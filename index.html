@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Challenge</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap">
+    <link rel = "stylesheet" href = "bootstrap-5.1.2-dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/main.css">
+    <link href="/css/fonts/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.0.0-web/css/brands.css" rel="stylesheet">
+    <link href="/css/fonts/css/css/solid.css" rel="stylesheet">
+    <script defer src="/css/fonts/js/brands.js"></script>
+    <script defer src="/css/fonts/js/solid.js"></script>
+    <script defer src="/css/fonts/js/fontawesome.js"></script>
+    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img class="img-responsive" src = "images/Logo.svg" alt = "site icon" width="163.69px" height="44.81px">
+            </a>
+
+            <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class = "navbar-toggler-icon"><i class="fas fa-bars" style="color:rgb(43, 31, 31); font-size:28px;"></i></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <div class = "navbar-nav-scroll">
+                    <ul class = "navbar-nav mx-auto text-center">
+                        <li class = "nav-item px-1 py-2">
+                            <a class = "nav-link text-uppercase text-dark border-0" href = "#apparels">apparels</a>
+                        </li>
+                        <li class = "nav-item px-1 py-2">
+                            <a class = "nav-link text-uppercase text-dark border-0" href = "#shoes">shoes</a>
+                        </li>
+                        <li class = "nav-item px-1 py-2">
+                            <a class = "nav-link text-uppercase text-dark border-0" href = "#equipment">equipment</a>
+                        </li>
+                        <li class = "nav-item px-1 py-2">
+                            <a class = "nav-link text-uppercase text-dark border-0" href = "#gift">gift</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 nav-btns order-lg-2"> 
+                <button type = "button" class = "btn position-relative">
+                    <i class="fa fa-gift"></i>
+                </button>
+    
+                <button type = "button" class = "btn position-relative">
+                    <i class="fa fa-star"></i> 
+                </button>
+    
+                <button type = "button" class = "btn position-relative">
+                    <i class="fa fa-heart"></i>
+                </button>
+    
+                <button type = "button" class = "btn position-relative">
+                    <i class="fa fa-tag"></i>
+                 </button>        
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 order-lg-2">
+                <ul class="nav mx-auto">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#signup" class="nav-link border-0">SIGN UP</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#login" class="nav-link">LOGIN</a>
+                    </li>
+                </ul>     
+            </div>       
+        </div>      
+    </nav> 
+
+    <!-- End of Navbar -->
+     
+    <!-- Header -->
+    <header id = "header">
+        <div class = "d-flex">
+            <p>ADVENTURE IS JUST AROUND THE CORNER!</p>
+        </div>
+        <div class = "location text-nowrap">
+            <a href="#storefind" class = "text-decoration-none">Find a store</a>
+         </div>
+    </header>
+    <!--End of Header -->
+
+    <!--Home Content -->
+
+    <!--Search Box -->
+    <section id="search-box">
+        <div class = "row">
+            <div class = "search-header position-relative">
+                <h1 class = "header position-relative d-inline-block">search reway</h2>
+            </div>
+
+            <div>
+                <div class = "input-group">
+                    <label for = "brand" class = "form-label">brands</label>
+                    <input type = "text" class = "form-control" placeholder="Enter Brand" id = "brand">
+                </div>
+
+                <div class = "input-group">
+                    <label for = "brand" class = "selection-label">colours</label>
+                    <select class="form-select" aria-label="Default select example" id ="brand">
+                        <option selected id = "selected">Select Colour</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <button class = "btn btn-primary" type = "submit">Search</button>
+            </div> 
+        </div>
+    </section>
+
+<!--Google Banner -->
+    <section id = "googlebanner">
+        <div class = "col-md-6 col-lg-4 row g-3">
+            <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/Advert Banner.png" alt = "" class = "img-fluid ">
+            </div>
+        </div>
+    </section>
+<!--End of Google Banner -->
+
+<!--Mail list -->
+<section id = "mail">
+    <div class ="icon">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+    </div>
+    <p class = "text-center ">sign up to our mailing list!</p>
+    <div class = "input-group">
+        <label for = "brand" class = "form-label">Email</label>
+        <input type = "text" class = "form-control" placeholder="ENTER EMAIL ADDRESS">
+        <button class = "btn btn-primary" type = "submit">Submit</button>
+    </div>
+</section>
+
+<!--End of Mail list -->
+
+
+<!--Summer Banner -->
+    <section id="summerbanner">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div id = "banner-content">
+                    <span class = "text-white">summer sale!</span>
+                    <h2 class = "text-white">up to 50% off!</h2>
+                    <div class = "shopping text-white text-center text-nowrap">
+                        <a href = "#shop" class = "btn w-140 ">shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--End Summer Banner -->
+
+<!--Slideview -->
+    <section id = "view">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-10 row g-3">
+                    <div class="card">
+                        <div class="demo">
+                            <ul id="lightSlider">
+                                <li data-thumb="images/Main item Image 01.png"> <img src="images/Main item Image 01.png" style="width: 96%; height:96%"/> </li>
+                                <li data-thumb="images/Main item Image 02.png"> <img src="images/Main item Image 02.png"/> </li>
+                                <li data-thumb="images/Main item Image 03.png"> <img src="images/Main item Image 03.png" /> </li>
+                                <li data-thumb="images/Main item Image 04.png"> <img src="images/Main item Image 04.png"/> </li>
+                                <li data-thumb="images/Main item Image 05.png"> <img src="images/Main item Image 05.png" /> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+<!--End of Slideview -->
+
+<!-- Item Details-->
+<section id = "item-details">
+    <div class = "col-md-6 col-lg-4 row g-3">
+        <div class = "d-flex align-items-start justify-content-start">
+        
+            <h1>Dylan Hiker Boot</h1>
+            <h2>superbalist</h2>
+            
+            <div id = "content-1">
+                <span class="nowrap"> <h1>Fabrication</h1> <h2>Faux Leather</h2> </span>
+                <span class="nowrap"> <h3>Colour</h3> <span class = "round-circle"></span><h4>Brown</h4> </span>
+                <span class="nowrap"> <h5>Brand</h5> <h6>Superbalist</h6> </span>
+            </div>
+
+            <hr />
+
+            <div id = "content-2">
+                <h1>product details</h1>
+                <ul class = "text-nowrap">
+                    <li>Hiking boot</li>
+                    <li>Speed laces</li>
+                    <li>Lace-up design</li>
+                    <li>Rubber sole</li>
+                  </ul>
+            </div>
+
+            <div id = "content-3">
+                <h1>R 359</h1>
+                <h2>R 599</h2>
+                <hr />
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--End of Item Details -->
+
+<!-- Add To Cart-->
+<section id = "cart">
+    <div class = "container">
+    <div class = "col-md-6 col-lg-4 row g-3">
+        <div class = "d-flex align-items-start justify-content-start">
+            <div class = "input-group">
+                <label for = "size" class = "selection-label">Size</label>
+                <div class = "col-12">
+                    <select class="form-select text-uppercase text-secondary" aria-label="Default select example" id="size" style="width: 300px;">
+                        <option selected id = "selected" >Select size</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                </div>
+            </div> 
+
+            <div class = "input-group py-5">
+                <label for = "quantity" class = "label2">quantity</label>
+                    <select class="form-select select2"  aria-label="Default select example" id="quantity" style="width: 310px;">
+                        <option selected id = "selected" >Select size</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+            </div> 
+            <button class = "btn btn-primary" type = "submit">Add to cart</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--End of Add To Cart -->
+
+<section id = "collection">
+    <div>
+        <h1>More From Boots </h1>
+        <hr/>
+        
+    </div>
+
+    <div class = "item-1">
+        <img src = "images/Boots 05.png" alt = "" class="img-fluid">
+        <h2>Hargrave Ankle boot</h2>
+        <h3>Superbalist</h3>
+        <h4>R 500</h4>
+        
+    </div>
+
+    <div class = "item-2">
+        <img src = "images/Boots 03.png" alt = "" class="img-fluid">
+        <h2>Cameron leather</h2>
+        <h3>Superbalist</h3>
+        <h4>R 539</h4>
+    </div>
+
+    <div class = "item-3">
+        <img src = "images/Boots 01.png" alt = "" class="img-fluid">
+        <h2>Grayson Brogue</h2>
+        <h3>Superbalist</h3>
+        <h4>R 420</h4>
+    </div>
+
+    <div class = "item-4">
+        <img src = "images/Boots 04.png" alt = "" class="img-fluid">
+        <h2>orca</h2>
+        <h3 class = "text-nowrap">Jack and Jones</h3>
+        <h4>R 500</h4>
+    </div>
+
+    <div class = "item-5">
+        <img src = "images/Boots 02.png" alt = "" class="img-fluid">
+        <h2>Jean Hiker Boots</h2>
+        <h3>Superbalist</h3>
+        <h4 class = "text-nowrap">R 600</h4>
+    </div>
+</section>
+
+<!--End of Home Content -->
+
+<!--About us -->
+   <!-- footer -->
+   <footer id = "footer">
+    <div class = "container">
+        <div class = "row text-white g-4">
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "font-weight-bold mb-3 mt-3">Account</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                           Account details
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                             Orders
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#returns" class = "text-white text-decoration-none text-muted">
+                          Returns and Exchanges
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "font-weight-bold mb-3 mt-3">The Company</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#about" class = "text-white text-decoration-none text-muted">
+                           About us
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#careers" class = "text-white text-decoration-none text-muted">
+                            Careers
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#contact" class = "text-white text-decoration-none text-muted">
+                          Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "font-weight-bold mb-3 mt-3">Follow Us!</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#facebook" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#instagram" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- End of container -->
+<!--End of About Us-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='js/lightslider.js'></script>
+    <script src = "js/jquery-3.6.0.js"></script>
+    <script>
+    $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 9
+    });
+    </script>
+
+    <script>
+        var sliderC = new Slider("#ex12c", { id: "slider12c", min: 0, max: 10, range: true, value: [3, 7] });
+    </script>
+</body>
+</html>
